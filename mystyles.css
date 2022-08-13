@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.ibb.co/hYXdksx/Massage-Therapy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+}
+nav {
+    margin: 0px 0;
+  }
+.dropdown {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 100%; 
+}
+.dropdown{
+    display: block;
+
+}
+nav ul {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    /* background-color: black; */
+}
+nav a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+    opacity: 1;
+}
+nav ul li:hover > ul {
+    display: inherit;
+
+}
+nav ul ul a {
+    font-size: 15px;
+}
+nav ul ul li {
+    background-color: black;
+    width: 140px;
+    display: list-item;
+    position: relative;
+    top: -10px; 
+}
+nav ul ul li:hover {
+    text-decoration: underline;
+}
+nav ul ul ul li {
+  position: relative;
+  top:-65px; 
+  left:140px;
+}
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+.container {
+   color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+button{
+    border-radius: 2px;
+    border: 2px solid white;
+    background-color: inherit;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+input{
+    height:30px;
+    border-style: none;
+
+}
+input::placeholder{
+    text-align: center;
+    color: black;
+}
+footer{
+    text-align: center;
+    /* background-color: black; */
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

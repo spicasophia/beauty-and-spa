@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    text-align: center;
+  }
+  .banner{
+    background-color: #34383C;
+  }
+
+nav ul {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    /* background-color: black; */
+}
+nav a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+    opacity: 1;
+}
+nav ul li:hover > ul {
+    display: inherit;
+
+}
+nav ul ul a {
+    font-size: 15px;
+}
+nav ul ul li {
+    background-color: black;
+    width: 140px;
+    display: list-item;
+    position: relative;
+    top: -10px; 
+}
+nav ul ul li:hover {
+    text-decoration: underline;
+}
+nav ul ul ul li {
+  position: relative;
+  top:-65px; 
+  left:140px;
+}
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.container {
+   color: white;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(https://i.ibb.co/hYXdksx/Massage-Therapy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    padding: 30px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', 'sans-serif';
+    font-style:italic;
+    padding-bottom: 15px;
+}
+
+#intro {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px 15px 15px;
+    font-style: italic;
+}
+
+.mag h2 {
+    background-color: #34383C ;
+    padding: 25px;
+    color: white;
+    font-size: 28px;
+}
+ 
+#across{
+    width: 70%;
+    border: 2px solid #34383C;
+}
+.mag p {
+    padding: 0 15px 20px 15px;
+    display: flex;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.first {
+    display: flex;
+    width: 97%;
+    padding-bottom: 20px;
+    padding: 20px;
+    background-color: #34383C;
+    color: #fff;
+    line-height: 30px;
+}
+
+#min {
+    width: 50%;
+    padding-left: 100px;
+}
+
+#max {
+    width: 40%;
+    padding-right: 60px;
+}
+
+.first a {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+.first a:hover {
+    text-decoration: underline;
+}
+#contact{
+    line-height: 30px;
+    font-size: 22px;
+}
+.second h2 {
+    text-align: center;
+    font-size: 35px;
+}
+#c{
+    font-weight: bold;
+    font-size: 28px;
+}
+#co{
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 30px;
+}
+.second p {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+#times{
+    padding-left: -10px;
+}
+#day{
+    line-height: 60px;
+    font-size: 20px;
+    list-style: none;
+}
+#day:hover{
+    text-decoration: underline;
+    color: #FDFC00;
+    cursor: pointer;
+}
+
+.icons .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: rgb(87,172,238);
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(199, 37, 64);
+    color: white;
+}
+
+.fa-snapchat {
+    background: rgb(253,252,0);
+    color: white;
+}
+
+.fa-youtube {
+    background: red;
+    color: white;
+}
+
+.second button {
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 80px;
+    font-size: 28px;
+    color: white;
+    /* font-weight: bold; */
+    border-style: none;
+    background-color: darkgray;
+}
+
+.subscribe{
+    background-color: darkgray;
+}
+.subscribe button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #34383C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

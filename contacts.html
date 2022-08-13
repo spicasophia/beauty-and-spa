@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://kit.fontawesome.com/c3d56379e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="reg">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./spa.html">About</a></li>
+            <li><a href="#">Services</a>
+                <!-- First tier dropdown -->
+            <ul>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">In-House</a></li>
+                <li><a href="#">Choose a Location</a></li>
+            </ul>
+            </li>  
+              <!-- the first dropdown is closed here -->
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div class="empty"><img src="https://i.ibb.co/hYXdksx/Massage-Therapy.jpg" width="100%" height="500em" alt="image"></div>
+
+       <!-- parent div start -->
+    <div class="reach">
+
+        <div id="start">
+            <h2>Contact Details</h2>
+            <ul>
+                <li><a href="tel:08069636335"><i class="fa-solid fa-phone"></i> 0806 963 6335</a></li>
+                <li><a href="mailto:spicasophia2508@gmail.com"><i class="fa-solid fa-inbox"></i> spicasophia2508@gmail.com</a></li>
+            </ul>
+            <div class="mapouter" style="padding-top: 40px;"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ekiti%20state%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+        </div>
+
+        <div id="request">
+            <h2>Request Form</h2>
+            <form class="my-form">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" placeholder="Enter First Name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" placeholder="Enter Last Name"><br>
+
+                <label for="number">Phone Number</label><br>
+                <input id="phone" type="tel" name="phone"/><br>
+
+                <label for="sex">Sex:</label><br>
+
+                <select id="sex" name="Sex">
+                  <option value="gender">Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="binary">Binary</option>
+                  <option value="would rather not say">Would rather not say</option>
+                </select><br><br>
+
+                <label for="comment">Comment</label><br>
+                <textarea name="message" id="comment" cols="40" rows="10" style="width: 100%; height: 100px;"></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        </div> <!-- parent div end -->
+
+        <div class="newsletter">
+          <button>Subscribe to our<a href="mailto:spicasophia2508@gmail.com"> Newsletter</a></button>
+        </div>
+
+        <footer>
+          <p>All Rights Reserved | Spica Sophia &copy; 2022</p>
+        </footer>
+
+</body>
+<script>
+    function getIp(callback) {
+    fetch('https://ipinfo.io/json?token=3da5401093359d', { headers: { 'Accept': 'application/json' }})
+   .then((resp) => resp.json())
+   .catch(() => {
+     return {
+       country: 'us',
+     };
+   })
+   .then((resp) => callback(resp.country));
+}
+
+
+const phoneInputField = document.querySelector("#phone");
+const phoneInput = window.intlTelInput(phoneInputField, {
+ initialCountry: "auto",
+ geoIpLookup: getIp,
+ utilsScript:
+   "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+  </script>
+</html>

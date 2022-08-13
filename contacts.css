@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+  }
+
+.reg {
+    background-color: #34383C;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    /* background-color: black; */
+}
+nav a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+    opacity: 1;
+}
+nav ul li:hover > ul {
+    display: inherit;
+
+}
+nav ul ul a {
+    font-size: 15px;
+}
+nav ul ul li {
+    background-color: black;
+    width: 140px;
+    display: list-item;
+    position: relative;
+    top: -10px; 
+}
+nav ul ul li:hover {
+    text-decoration: underline;
+}
+nav ul ul ul li {
+  position: relative;
+  top:-65px; 
+  left:140px;
+}
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+.reach {
+    display: flex;
+    width: 97%;
+    padding-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(52,56,60);
+    color: #fff;
+}
+
+#start {
+    width: 50%;
+    /* padding-left: 30px; */
+}
+
+#start h2 {
+    padding-left: 32px;
+    /* color: black; */
+    font-size: 28px; 
+}
+
+#start a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#start a:hover {
+    text-decoration: underline;
+}
+
+#start li {
+    text-decoration: none;
+    list-style: none;
+    line-height: 50px;
+}
+
+#request {
+    width: 50%;
+    padding-right: 60px;
+    margin-left: 150px;
+    line-height: 35px;
+}
+
+#request h2{
+    font-size: 28px;
+}
+
+#request form {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 15px; 
+    z-index: -10px;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#request label {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin: 2px 0 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.my-form{
+    color:black;
+}
+
+#request form button {
+    background-color: rgb(46,44,45);
+    color:white;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+    margin-left: 220px;
+    border-style: none;
+    border: 2px solid rgb(46,44,45);
+    cursor: pointer;
+    }
+
+    #request textarea{
+        background-color:white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        font-weight: bold;
+      }
+
+      .newsletter {
+        text-decoration: none;
+        background-color: darkgray;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .newsletter button {
+        font-size: 28px;
+        background-color: darkgray;
+        border-style: none;
+        color: #fff;
+        line-height: 80px;       
+    }
+
+    .newsletter button a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold; 
+    }
+
+    footer{
+        background-color: #34383C;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    
+
